@@ -1,0 +1,38 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<div class="margin"></div>
+
+<a href="http://localhost:3000/create">Novo Produto</a>
+
+    <table>
+        <% for (var i=0; i < tecs.length; i++) { 
+            var tec = tecs[i] %>
+            <tr>
+                <td class="name-column">
+                    <%= tec.name%>
+                </td>
+                <td>
+                    <%= tec.cor%>
+                </td>
+                <td>
+                    <%= (tec.comp)+' m'%>
+                </td>
+                <td>
+                    <%= 'R$ ' + (tec.vm) %>
+                </td>
+                <td>
+                    <form action="/update" method="get">
+                        <input type="hidden" name="product" value="<%= (JSON.stringify(tec)) %>">
+                        <input type="submit" value="Atualizar">
+                    </form>
+                </td>
+                <td>
+                    <form action="/tecs/delete" onSubmit="return confirm('Confirma Exclusão ?')" 
+                        method="post">
+                        <input type="hidden" name="Tec" value="<%= (JSON.stringify(tec)) %>">
+                        <input type="submit" value="Excluir">
+                    </form>
+                </td>
+            </tr>
+            <% } %>
+    </table>

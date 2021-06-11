@@ -1,0 +1,52 @@
+body{
+    background-color: #e0f1ff;
+}
+.margin {    
+    height: 1em;
+}
+#bt {
+
+    width: 100px;
+    height: 35px;
+}
+.line {
+
+    display: inline-flex;
+    width: 90%;
+    height: 75px;
+    
+    
+}
+table {
+    font-family: arial, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    padding: 20px;
+    table-layout: fixed;
+}
+.name-column {
+    width: 20%;
+}
+td {
+    width: 15%;
+    text-align: left;
+    padding-left: 16px;
+}
+input[type=submit] {
+    background-color: darkblue;
+    padding: 12px 40px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+a {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    margin-bottom: 0;
+}

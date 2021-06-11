@@ -1,0 +1,33 @@
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <div class="margin"></div>
+        <h2>Coloque os dados do protudo</h2>
+        <div class="line">
+            <form method="post" action="/tecs/create">
+                <select name="name" required>
+                    <option value="0">Escolha o tecido</option>
+                    <option value="Gabardine">Gabardine</option>
+                    <option value="Twei">Twei</option>
+                    <option value="Triccoline">Tricoline</option>
+                    <option value="Cetim">Cetim</option>
+                    <option value="Microfibra">Microfibra</option>
+                    <option value="Mousseline">Mousseline</option>
+                </select>
+                <select name="cor" required>
+                    <option value="0">Escolha a cor</option>
+                    <option value="Preto">Preto</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Cinza">Cinza</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Branco">Branco</option>
+                </select>
+                <input name="vm" placeholder="Valor por metro" maxlength="5" pattern="\d+(,\d{2})?" required>
+                <input name="comp" placeholder="Comprimento" maxlength="5"  required>
+                <input type="submit" value="Cadastrar" ><br>
+            </form>
+<div class="margin"></div>
+        </div>
+    <a href="/">Voltar</a>

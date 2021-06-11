@@ -1,0 +1,39 @@
+{
+  "tecs": [
+    {
+      "id": "ER8aPw0KFcYK_iDht8eLm",
+      "comp": 22,
+      "name": "Microfibra",
+      "cor": "Vermelho",
+      "vm": 20
+    },
+    {
+      "id": "",
+      "comp": "30",
+      "name": "Preto",
+      "cor": "Cetim",
+      "vm": 25
+    },
+    {
+      "id": "",
+      "comp": "1",
+      "name": "Preto",
+      "cor": "Triccoline",
+      "vm": 25
+    },
+    {
+      "id": "GerSZbmwwBjia54P9rzhW",
+      "comp": 30.26,
+      "name": "Triccoline",
+      "cor": "Vermelho",
+      "vm": 25
+    },
+    {
+      "id": "",
+      "comp": "13,5",
+      "name": "Vermelho",
+      "cor": "Triccoline",
+      "vm": 25
+    }
+  ]
+}

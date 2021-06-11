@@ -1,0 +1,17 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<div class="top">
+</div>  
+
+<form action="/tecs/update" method="post">
+    <input type="hidden" name="id" value="<%= tec.id %>">
+    <input type="text" placeholder="Nome" name="name" value="<%= tec.name %>" required> <br>
+    <input type="text" placeholder="Cor" name="cor" value="<% tec.cor %>" required> <br>
+    <input type="text" placeholder="Valor por metro" name="vm" value="<%= (tec.vm).replace('.',',') %>" pattern="\d+(,\d{2})?" required> <br><br>
+    <input type="text" placeholder="Comprimento" name="comp" value="<%= tec.comp %>" required><br>
+    <input type="submit" value="Atualizar">
+</form>
+
+<div class="margin"></div>  
+
+<a href="/">Voltar</a>
